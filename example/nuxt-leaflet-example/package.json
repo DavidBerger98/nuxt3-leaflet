@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-leaflet-example",
+  "name": "nuxt3-leaflet-example",
   "version": "1.0.0",
-  "description": "Example of nuxt-leaflet",
-  "author": "Rasmus Schlünsen",
+  "description": "Example of nuxt3-leaflet",
+  "author": "David Berger",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -12,10 +12,8 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
-    "nuxt-leaflet": "0.0.17",
-    "vuetify": "^1.5.5",
-    "vuetify-loader": "^1.2.1"
+    "nuxt": "3.0.0",
+    "nuxt3-leaflet": "0.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",

@@ -1,26 +1,30 @@
 {
-  "name": "nuxt-leaflet",
-  "version": "0.0.27",
-  "description": "Nuxt module for leafletjs",
+  "name": "nuxt3-leaflet",
+  "version": "0.1.0",
+  "description": "Nuxt 3 module for leaflet",
   "license": "MIT",
   "contributors": [
     {
       "name": "Rasmus Schlunsen"
+    },
+    {
+      "name": "David Berger"
     }
   ],
   "main": "lib/module.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schlunsen/nuxt-leaflet.git"
+    "url": "git+https://github.com/davidberger98/nuxt3-leaflet.git"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt test/fixture",
+    "dev": "npx nuxi test",
     "lint": "eslint lib test",
     "test": "npm run lint && jest",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "standard-version && git push --follow-tags && npm publish",
+    "playground": "npx nuxi dev playground/"
   },
   "eslintIgnore": [
     "lib/templates/*.*"
@@ -29,20 +33,20 @@
     "lib",
     "*.d.ts"
   ],
-  "types": [
-    "index.d.ts"
-  ],
+  "types": "index.d.ts",
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true
   },
   "dependencies": {
-    "@types/leaflet": "1.7.6",
-    "leaflet": "^1.7.1",
-    "npm-publish-git-tag": "^3.0.3",
-    "vue2-leaflet": "^2.7.1"
+    "@types/leaflet": "^1.9.0",
+    "@vue-leaflet/vue-leaflet": "^0.7.0",
+    "leaflet": "^1.9.3",
+    "npm-publish-git-tag": "^3.0.3"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^3.0.0",
+    "@nuxt/test-utils-edge": "^3.0.1-rc.0-27848798.0cb9a4c",
     "codecov": "3.7.1",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
@@ -55,12 +59,13 @@
     "eslint-plugin-vue": "^6.1.2",
     "jest": "^25.1.0",
     "jsdom": "^16.4.0",
-    "nuxt": "^2.14.9",
-    "standard-version": "^8.0.1"
+    "nuxt": "3.0.0",
+    "standard-version": "^8.0.1",
+    "vitest": "^0.25.8"
   },
   "bugs": {
-    "url": "https://github.com/schlunsen/nuxt-leaflet/issues"
+    "url": "https://github.com/davidberger98/nuxt3-leaflet/issues"
   },
-  "readme": "https://github.com/schlunsen/nuxt-leaflet#readme",
-  "homepage": "https://github.com/schlunsen/nuxt-leaflet#readme"
+  "readme": "https://github.com/davidberger98/nuxt3-leaflet#readme",
+  "homepage": "https://github.com/davidberger98/nuxt3-leaflet#readme"
 }
