@@ -1,5 +1,6 @@
 import * as VueLeaflet from '@vue-leaflet/vue-leaflet'
 // import L from 'leaflet'
+import { defineNuxtPlugin } from "nuxt/app"
 
 export default defineNuxtPlugin(async (nuxtApp) => {
   nuxtApp.vueApp.component('l-circle', VueLeaflet.LCircle)
